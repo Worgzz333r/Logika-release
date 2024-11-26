@@ -1,0 +1,100 @@
+.home {
+    background-image: url(images/main-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Головний дів з усіма елементами */
+.home-container {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+
+    height: 90vh;
+}
+
+/* Досягення сайту */
+.container {
+    width: 100%;
+    height: 100px;
+    background-color: #413223;
+
+    margin-bottom: 30px;
+}
+
+/* Опис */
+.container .description {
+    display: table;
+    margin: 0 auto;
+    padding-left: 0;
+
+    text-align: left;
+    height: 100%;
+    width: 1500px;
+}
+
+/* Пункт опису */
+.container .description li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 80px 0px 80px;
+
+    color: #FFF4E6;
+    font-size: 32px;
+    font-family: 'Kameron';
+}
+
+/* Кінець */
+
+
+.catalog-container {
+    display: inline;
+    align-self: end;
+    margin-left: 10vh;
+    margin-top: 160px;
+}
+
+/* Вітальний текст */
+.catalog-container h1 {
+    width: 400px;
+    color: #FFF4E6;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+}
+
+/* Кнопка переходу до каталогу */
+.catalog-container button {
+    height: 80px;
+    width: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFF4E6;
+    background-color: #BD977C;
+    border: 0;
+    text-align: center;
+}
+
+.catalog-container button .catalog-btn:hover {
+    transition: 0.3s;
+    color: #E5CAA6;
+}
+
+.catalog-container button .catalog-btn {
+    position: relative;
+}
+
+.catalog-container button .catalog-btn:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #E5CAA6;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.catalog-container button .catalog-btn:hover:after {
+    transform: scaleX(1);
+}

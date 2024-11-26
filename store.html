@@ -1,0 +1,160 @@
+{%extends "base.html"%}
+{%block title%}<title>Stone Hearts Store</title>{%endblock%}
+{%block content%}
+
+<body class="store-background">
+
+  <!-- Основний грід -->
+  <div class="store-grid">
+
+    <div class="store-title">
+      <span>STORE</span>
+    </div>
+    <!-- Список фільтрів -->
+    <div class="filters-page">
+      <!-- Вкладка з усіма елментами повязними з фільтрацією-->
+      <div class="filters-container">
+
+        <!-- Заголовок вкладки фільтрів -->
+        <div class="filters-panel">
+
+          <span>Filters <img class="filter-img" src="static/images/filter-img.png" alt=""></span>
+
+        </div>
+
+        <hr class="line-btwn-filters">
+        <!-- Панель з цінами -->
+        <div class="price-panel">
+
+          <span class="filters-inner-title">Price</span>
+          <!-- Контейнер групуючий ввід цін -->
+          <div class="price-grouping-container">
+
+            <!-- Вікно вводу ціни "від" -->
+            <div class="price-input-container">
+              <span>$</span>
+              <input type="number" placeholder="from...">
+              </input>
+
+            </div>
+            <!-- Кінець -->
+            <hr class="line-btwn-inputs">
+            <!-- Вікно вводу ціни "до" -->
+            <div class="price-input-container">
+              <span>$</span>
+              <input type="number" placeholder="to...">
+              </input>
+
+            </div>
+            <!-- Кінець -->
+          </div>
+          <!-- Кінець -->
+        </div>
+        <!-- Кінець панелі з цінами -->
+
+        <hr class="line-btwn-filters">
+
+        <!-- Вкладка з категоріями -->
+        <div class="category-panel">
+          <span class="filters-inner-title">Category</span>
+
+          <ul class="stones-filters">
+            <!-- Пункти списку -->
+            <li>
+              <div>
+                <input type="checkbox" class="checkbox">
+                Jewelry gems
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" class="checkbox">
+                Sculpting stones
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" class="checkbox">
+                Decoration stones
+              </div>
+            </li>
+            <!-- Кінець -->
+          </ul>
+
+        </div>
+        <!-- Кінець вкладки з категоріями -->
+        <hr class="line-btwn-filters">
+      </div>
+      <!-- Кінець -->
+    </div>
+
+    <!-- Список продуктів -->
+    <div class="products-list">
+
+      <!-- Контейнер з продуктами -->
+      <div class="products-container">
+
+        <!-- Вкладка продукту -->
+        <div class="product-list-panel">
+          <!-- Дів з текстом -->
+          <div class="product-text">
+            <!-- Заголовок -->
+            <span class="product-title">Obsidian</span>
+            <!-- Опис -->
+            <p class="product-descr">Obsidian is an extrusive rock that erupted out of a volcano. Most volcanic rocks
+              are rough and jagged
+              because they contain gas bubbles. But obsidian is smooth because it contains mostly of glass.</p>
+          </div>
+          <!-- Кінець -->
+          <!-- Меню товара -->
+          <div class="product-bottom-menu">
+
+            <div class="product-price">
+              <!-- Ціна -->
+              <span class="currency">$</span>
+              1234
+            </div>
+            <!-- Кнопка додати в кошик -->
+            <button class="add-to-cart-btn">add to <img class="cart-img" src="static/images/cart-img.png"
+                alt=""></button>
+
+          </div>
+          <!-- Кінець меню товара -->
+
+        </div>
+        <!-- Кінець вкладки -->
+
+        <!-- Продукт номер 2 -->
+        <div class="product-list-panel">
+          <div class="product-text-2">
+            <span class="product-title">Peridot</span>
+            <p class="product-descr">Peridot sometimes called chrysolite, is a
+              yellow-green transparent variety of olivine. Peridot is one of the few gemstones that occur in only one
+              color.</p>
+          </div>
+
+          <div class="product-bottom-menu">
+            <div class="product-price">
+              <span class="currency">$</span>
+              4421
+            </div>
+
+            <button class="add-to-cart-btn">add to <img class="cart-img" src="static/images/cart-img.png"
+                alt=""></button>
+
+          </div>
+
+        </div>
+        <!-- Кінець продукта номер 2 -->
+
+      </div>
+      <!-- Кінець контейнеру з продуктами -->
+    </div>
+
+    <!-- Кінець списку продуктів -->
+  </div>
+  <!-- Кінець -->
+</body>
+{%endblock%}

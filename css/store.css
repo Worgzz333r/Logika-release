@@ -1,0 +1,311 @@
+/* MAIN STYLE START*/
+.store-background {
+    background-image: url(images/store-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Головний грід */
+.store-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 80px 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Заголовок STORE */
+.store-grid .store-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    background-color: #A58363;
+    box-shadow: 0 0 15px #00000099;
+    clip-path: inset(0 0 -15px 0);
+
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0.2em;
+    color: #3C2F2F;
+}
+
+/* Кінець */
+
+/* Клітка вкладки фільтрів */
+.store-grid .filters-page {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    background-color: #CC9A7B;
+}
+
+/* Кінець */
+
+/* Клітка списку товарів */
+.store-grid .products-list {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+/* Конейнер з усіма товарами */
+.products-list .products-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+/* Панель з інформацією про продукт */
+.products-list .products-container .product-list-panel {
+    display: grid;
+    grid-template-rows: 9em 2.7em;
+    grid-template-columns: 1fr;
+    width: 30em;
+    height: min-content;
+    margin-bottom: 4em;
+}
+
+/* Заголовок та опис продукта */
+.products-container .product-list-panel .product-text {
+    grid-row: 1 / 2;
+    color: #F0E7E2;
+    border-radius: 10px 10px 0 0;
+    padding: 0 .7em 0 .7em;
+
+    background-image: url(images/product-bgs/obsidian-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.products-container .product-list-panel .product-text-2 {
+    grid-row: 1 / 2;
+    color: #F0E7E2;
+    border-radius: 10px 10px 0 0;
+    padding: 0 .7em 0 .7em;
+
+    background-image: url(images/product-bgs/peridot-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Відступ заголовка */
+.products-container .product-list-panel .product-title {
+    font-size: 3rem;
+    margin-left: 0.3em;
+}
+
+/* Форматування опису */
+.products-container .product-list-panel .product-descr {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Нижнє меню взаємодії з продуктом */
+.products-container .product-list-panel .product-bottom-menu {
+    display: flex;
+    grid-row: 2 / 3;
+
+    font-size: 1.8rem;
+
+    border-radius: 0 0 10px 10px;
+    background-color: #231E32;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .3em 0 .3em;
+}
+
+/* Зміна кольору ціни */
+.product-bottom-menu .product-price {
+    color: #D9D9D9;
+}
+
+/* Зміна кольору валюти */
+.product-bottom-menu .currency {
+    color: #438140;
+}
+
+/* Кнопка додати до кошику */
+.product-list-panel .product-bottom-menu .add-to-cart-btn {
+    display: flex;
+
+    font-size: 1.4rem;
+    font-family: "Kameron";
+    border-radius: 10px;
+    width: em;
+    height: 1.5em;
+    align-items: center;
+    color: #D0D8C1;
+    background-color: #3D4B64;
+    border: 0;
+}
+
+/* Анімація кнопки додати до кошика */
+.product-list-panel .product-bottom-menu .add-to-cart-btn:active {
+    transition: 0.1s;
+    transform: scale(0.93);
+}
+
+/* Фото кошика */
+.product-list-panel .product-bottom-menu .add-to-cart-btn .cart-img {
+    width: 40px;
+}
+
+/* Кінець */
+
+/* Кінець головного гріду */
+
+
+.filters-page .filters-container {
+    margin: 1em;
+}
+
+/* Лінія між видами фільтрації */
+.filters-page .filters-container .line-btwn-filters {
+    position: relative;
+    border: 3px solid #3C2F2F;
+    border-radius: 10px;
+    width: 97%;
+    margin: 0;
+}
+
+
+/* Панель фільтрування за ціною */
+.filters-container .price-panel {
+    margin: 1em 0 1em 0;
+}
+
+/* Панель з фільтрами */
+.filters-page .filters-container .filters-panel {
+    font-size: 3rem;
+    color: #3C2F2F;
+    text-align: center;
+    margin-top: 0.4em;
+}
+
+/* Форматування заголовку фільтри */
+.filters-page .filters-panel span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Фото лійки */
+.filters-panel span .filter-img {
+    width: 42px;
+}
+
+/* Заголовки видів фільтрації */
+.filters-inner-title {
+    margin-top: 1em;
+    font-size: 2.5rem;
+    color: #FFF4E6;
+}
+
+/* Дів який групує усі елементи для зручного вирівнювання */
+.price-grouping-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 1em 0;
+}
+
+
+/* Поле вводу діапазону цін */
+.price-grouping-container .price-input-container {
+    display: block;
+    height: 100%;
+}
+
+.price-input-container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+/* Форматування полів вводу цін */
+.price-input-container input {
+    padding-left: 1.5em;
+    /* Форматування рядка вводу */
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    /* Форматування інпуту рядка */
+    font-size: 20px;
+    color: #000000bf;
+}
+
+/* Символ валюти */
+.price-grouping-container .price-input-container span {
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 0.2em;
+    color: #438140;
+}
+
+.price-input-container input::placeholder {
+    font-size: 1.2rem;
+}
+
+
+/* Лінія між полями вводу діапазону цін */
+.line-btwn-inputs {
+    border: 1px solid #3C2F2F;
+    background-color: #3C2F2F;
+    height: 0.1em;
+    width: 1.5em;
+    margin: 0;
+    border-radius: 10px;
+    margin: 0 .2em 0 .2em;
+}
+
+.category-panel .stones-filters {
+    list-style: none;
+    font-size: 1rem;
+    color: #EFE7E3;
+    padding: 0;
+    margin: 0;
+    margin: .5em 0 1em 0;
+}
+
+.stones-filters li div {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.stones-filters li div .checkbox {
+    display: inline-block;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3C2F2F;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.stones-filters li div .checkbox:before {
+    content: "";
+    background-color: #3C2F2F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 12px;
+    height: 12px;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.stones-filters li div .checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* MAIN STYLE END */
