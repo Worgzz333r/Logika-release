@@ -1,72 +1,72 @@
 [
-    {
-      "id": 1,
-      "title": "Sapphire",
-      "image": "../img/amethyst-img.png",
-      "price": 3000,
-      "description": "A sapphire is a precious gemstone that is a variety of corundum. It is typically blue in color. Sapphires are known for their beauty, durability, and high value."
-    },
-    {
-      "id": 2,
-      "title": "Ruby",
-      "image": "../img/ruby-img.png",
-      "price": 4500,
-      "description": "A ruby is a precious gemstone that is a variety of corundum. It is typically red in color. Rubies are known for their intense color and high value."
-    },
-    {
-      "id": 3,
-      "title": "Emerald",
-      "image": "../img/emerald-img.png",
-      "price": 3800,
-      "description": "An emerald is a precious gemstone that is a variety of beryl. It is typically green in color. Emeralds are known for their deep green color and high value."
-    },
-    {
-      "id": 4,
-      "title": "Diamond",
-      "image": "../img/diamond-img.png",
-      "price": 8000,
-      "description": "A diamond is a precious gemstone that is a form of carbon. It is typically colorless or slightly colored. Diamonds are known for their brilliance and high value."
-    },
-    {
-      "id": 5,
-      "title": "Opal",
-      "image": "../img/opal-img.png",
-      "price": 2500,
-      "description": "An opal is a precious gemstone that is a form of silica. It is known for its play of color, which is caused by the diffraction of light."
-    },
-    {
-      "id": 6,
-      "title": "Amethyst",
-      "image": "../img/amethyst-img.png",
-      "price": 1200,
-      "description": "An amethyst is a semi-precious gemstone that is a variety of quartz. It is typically purple in color. Amethysts are known for their calming properties and beauty."
-    },
-    {
-      "id": 7,
-      "title": "Citrine",
-      "image": "../img/citrine-img.png",
-      "price": 900,
-      "description": "A citrine is a semi-precious gemstone that is a variety of quartz. It is typically yellow in color. Citrines are known for their cheerful color and positive energy."
-    },
-    {
-      "id": 8,
-      "title": "Topaz",
-      "image": "../img/topaz-img.png",
-      "price": 1500,
-      "description": "A topaz is a semi-precious gemstone that is a silicate mineral. It can be found in a variety of colors, including blue, yellow, and pink. Topaz is known for its brilliance and hardness."
-    },
-    {
-      "id": 9,
-      "title": "Garnet",
-      "image": "../img/garnet-img.png",
-      "price": 1800,
-      "description": "A garnet is a semi-precious gemstone that is a silicate mineral. It can be found in a variety of colors, including red, green, and orange. Garnets are known for their deep color and durability."
-    },
-    {
-      "id": 10,
-      "title": "Peridot",
-      "image": "../img/peridot-img.png",
-      "price": 1000,
-      "description": "A peridot is a semi-precious gemstone that is a silicate mineral. It is typically green in color. Peridots are known for their vibrant green color and calming energy."
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Sapphire",
+    "image": "../img/sapphire-img.png",
+    "price": 3000,
+    "description": "A blue corundum gemstone, known for beauty and durability."
+  },
+  {
+    "id": 2,
+    "title": "Ruby",
+    "image": "../img/ruby-img.png",
+    "price": 4500,
+    "description": "A red corundum gemstone, valued for its intense color."
+  },
+  {
+    "id": 3,
+    "title": "Emerald",
+    "image": "../img/emerald-img.png",
+    "price": 3800,
+    "description": "A green beryl gemstone, prized for its deep color."
+  },
+  {
+    "id": 4,
+    "title": "Kyanite",
+    "image": "../img/kyanite-img.png",
+    "price": 8000,
+    "description": "A carbon gemstone, renowned for its brilliance."
+  },
+  {
+    "id": 5,
+    "title": "Obsidian",
+    "image": "../img/obsidian-img.png",
+    "price": 2500,
+    "description": "A silica gemstone, known for its play of color."
+  },
+  {
+    "id": 6,
+    "title": "Amethyst",
+    "image": "../img/amethyst-img.png",
+    "price": 1200,
+    "description": "A purple quartz gemstone, valued for its calming properties."
+  },
+  {
+    "id": 7,
+    "title": "Quartz",
+    "image": "../img/quartz-img.png",
+    "price": 900,
+    "description": "A yellow quartz gemstone, known for its cheerful color."
+  },
+  {
+    "id": 8,
+    "title": "Topaz",
+    "image": "../img/topaz-img.png",
+    "price": 1500,
+    "description": "A silicate mineral gemstone, available in various colors."
+  },
+  {
+    "id": 9,
+    "title": "Opal",
+    "image": "../img/opal-img.png",
+    "price": 1800,
+    "description": "A silicate mineral gemstone, known for its deep color and durability."
+  },
+  {
+    "id": 10,
+    "title": "Peridot",
+    "image": "../img/peridot-img.png",
+    "price": 1000,
+    "description": "A green silicate mineral gemstone, known for its vibrant color."
+  }
+]
