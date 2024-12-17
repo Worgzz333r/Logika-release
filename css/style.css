@@ -3,6 +3,13 @@ body {
     color: #FFF4E6;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .header-bg {
     background-image: url(../img/main-background.jpg);
     background-size: cover;
@@ -179,14 +186,28 @@ header nav ul li {
     box-shadow: inset 0px 0px 5px #00000080;
 }
 
-footer {
-    background-color: #3C2F2F;
-    height: 10em;
-    display: flex;
+.add-to-cart-btn:hover {
+    color: #6E4D3F;
+    background-color: #F5C0AD;
+    transition: all .25s ease-in;
 }
 
-footer .logo-container {
-    width: fit-content;
+.add-to-cart-btn:active{
+    transform: scale(85%);
+    box-shadow: inset 0px 0px 10px #3D9F4F;
+    transition: all .1s ease-in;
+}
+
+footer {
+    background-color: #3C2F2F;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: minmax(15em, 2fr) minmax(1em, 2fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-wrap: nowrap;
 }
 
 .logo-text {
@@ -194,14 +215,31 @@ footer .logo-container {
     font-weight: bold;
 }
 
+.logo-container {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo-img {
+    margin: 0px;
+}
+
 .contacts-container {
-    width: fit-content;
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+
 }
 
 .contacts {
+    float: right;
+    text-align: left;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.contacts li {
-    text-decoration: none;
+.contacts li a {
+    color: #FFF4E6;
 }
