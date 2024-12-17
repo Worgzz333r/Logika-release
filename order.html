@@ -58,33 +58,60 @@
 
       <div class="container py-5">
 
-        <div class="cart-page-title fs-2 fw-bold py-2 pe-5">
+        <div class="catalogue-title text-center fs-2 fw-bold py-2">
+          Order
+        </div>
 
-          <div class="clear-all-cont ps-2">
-            <div class="clear-buttons d-none">
-              <svg class="clear-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 7l16 0" />
-                <path d="M10 11l0 6" />
-                <path d="M14 11l0 6" />
-                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
-                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
-              </svg>
-              <button class="clear-btn ">Clear All</button>
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-xl-7">
+            <div class="cart-list container p-2">
             </div>
           </div>
 
-          <span class="cart-title">Cart</span>
-        </div>
+          <div class="col-12 col-md-6 col-xl-5">
+            <form action="" method="post">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+              </div>
 
-        <div class="cart-list container p-2">
-        </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
 
-        <div class="total-container py-2 ps-5 fw-bold fs-4">
-          Total:
-          <button><a href="order.html">Make an order</a></button>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone number:</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+38(123) 345 67 89">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Town, street, house number">
+              </div>
+
+              <div class="mb-3">
+                Post office
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Nova poshta</option>
+                  <option value="2">Meest express</option>
+                  <option value="3">Ukrposhta</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="order-btn">Order</button>
+
+            </form>
+          </div>
+
         </div>
 
       </div>

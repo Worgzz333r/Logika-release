@@ -106,22 +106,23 @@ getProducts().then(function (products) {
 //Додавання товарів кошика на сторінку
 function getCartItem(product) {
     return `
-     <div class="row m-3 cart-product-panel">
+     <div class="m-3 cart-product-panel">
  
           <div class="product-cart-image">
             <img src="${product.image}" class="img-fluid">
           </div>
           <div class="product-cart-title details-bg py-2 ps-5">
-            <h5 class="fs-3 fw-semibold">${product.title}</h5>
+            <span class="fs-3 fw-semibold">${product.title}</span>
           </div>
-          <div class="product-cart-quant details-bg py-2 fw-semibold fs-3">${product.quantity}</div>
-          <div class="product-cart-price details-bg py-2 fw-semibold fs-3 pe-5">
+          <div class="product-cart-quant details-bg py-2 fw-semibold fs-4">${product.quantity}</div>
+          <div class="product-cart-price details-bg py-2 fw-semibold fs-4 pe-5">
           <span class="currency-sign">$</span> ${product.price * product.quantity}</div>
     
         </div>`
 }
 
 let cart_list = document.querySelector(".cart-list")
+let clear_cart_btn = document.querySelector(".clear-buttons")
 
 if (cart_list) {
     cart_list.innerHTML = ''
@@ -133,10 +134,16 @@ if (cart_list) {
     if (cart_list.innerHTML == '') {
         cart_list.innerHTML = 'Your cart is empty'
     }
+
+    if (Object.keys(cart.items).length > 0) {
+        clear_cart_btn.classList.remove('d-none')
+    }
+
+    let clear_btn = document.querySelector(".clear-btn")
+
+    clear_btn.addEventListener("click", function () {
+        document.cookie = `cart=''; max-age=0; path/`
+        cart_list.innerHTML = 'Your cart is empty'
+        clear_cart_btn.classList.add('d-none')
+    })
 }
-
-let clear_btn = document.querySelector(".clear-icon")
-
-clear_btn.addEventListener("click", function () {
-    cart_list.innerHTML = ''
-})
