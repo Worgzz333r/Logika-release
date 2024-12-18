@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/animations.css">
 
 </head>
 
@@ -34,11 +35,11 @@
         <div class="collapse navbar-collapse mx-5 fs-5" id="navbarSupportedContent" style="height: 40px;">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" style="color: #FFF4E6;" aria-current="page" href="index.html">Main
+              <a class="nav-link" style="color: #FFF4E6BF;" aria-current="page" href="index.html">Main
                 page</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #FFF4E6BF;" href="cart.html">Cart</a>
+              <a class="nav-link active" style="color: #FFF4E6;" href="cart.html">Cart</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" style="color: #FFF4E6BF;" href="order.html">Order</a>
@@ -56,11 +57,11 @@
   <main>
     <div class="main-content-bg">
 
-      <div class="container py-5">
+      <div class="anim-cont container py-5">
 
         <div class="cart-page-title fs-2 fw-bold py-2 pe-5">
 
-          <div class="clear-all-cont ps-2">
+          <div class="ps-1">
             <div class="clear-buttons d-none">
               <svg class="clear-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -72,19 +73,20 @@
                 <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
                 <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
               </svg>
-              <button class="clear-btn ">Clear All</button>
+              <button class="clear-btn fw-medium">Clear All</button>
             </div>
           </div>
 
           <span class="cart-title">Cart</span>
         </div>
 
-        <div class="cart-list container p-2">
+        <div class="cart-list cart-list-format container p-2">
         </div>
 
-        <div class="total-container py-2 ps-5 fw-bold fs-4">
-          Total:
-          <button><a href="order.html">Make an order</a></button>
+        <div class="total-container py-2 fs-4">
+          <a href="order.html">
+            <button class="go-to-order-btn p-1 px-4 fw-semibold d-none">Make an order</button>
+          </a>
         </div>
 
       </div>

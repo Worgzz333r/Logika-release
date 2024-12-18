@@ -20,6 +20,10 @@ header nav {
     padding: 0;
 }
 
+.header-link:hover {
+    color: #FFF4E6;
+}
+
 .logo-img {
     transform: scaleX(-1)
 }
@@ -113,6 +117,9 @@ header nav ul li {
     background-color: #BD977C;
     box-shadow: inset 0px 4px 10px #00000040;
     border-radius: 10px 10px 0px 0px;
+
+    animation-duration: 1.5s;
+    animation-name: text-appear;
 }
 
 .products-list {
@@ -131,6 +138,7 @@ header nav ul li {
     grid-template-rows: minmax(5rem, 8rem) 2em;
     background-color: #BD977C;
     border-radius: 10px;
+    box-shadow: 0px 3px 10px #413223;
 }
 
 .stone-image {
@@ -192,7 +200,7 @@ header nav ul li {
     transition: all .25s ease-in;
 }
 
-.add-to-cart-btn:active{
+.add-to-cart-btn:active {
     transform: scale(85%);
     box-shadow: inset 0px 0px 10px #3D9F4F;
     transition: all .1s ease-in;
@@ -242,4 +250,19 @@ footer {
 
 .contacts li a {
     color: #FFF4E6;
+}
+
+.anim-main {
+    animation-duration: 1s;
+    animation-name: main-appear;
+}
+
+.catalogue-btn .ctlg-link {
+    color: #FFF4E6;
+    text-decoration: none;
+}
+
+.ctlg-link:hover {
+    color: #E5CAA6;
+    transition: .4s;
 }

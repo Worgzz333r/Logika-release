@@ -111,11 +111,11 @@ function getCartItem(product) {
           <div class="product-cart-image">
             <img src="${product.image}" class="img-fluid">
           </div>
-          <div class="product-cart-title details-bg py-2 ps-5">
+          <div class="product-cart-title details-bg py-2 ps-3">
             <span class="fs-3 fw-semibold">${product.title}</span>
           </div>
-          <div class="product-cart-quant details-bg py-2 fw-semibold fs-4">${product.quantity}</div>
-          <div class="product-cart-price details-bg py-2 fw-semibold fs-4 pe-5">
+          <div class="details-bg py-2 fw-semibold fs-4 text-end">${product.quantity}</div>
+          <div class="product-cart-price details-bg py-2 fw-semibold fs-4 pe-3">
           <span class="currency-sign">$</span> ${product.price * product.quantity}</div>
     
         </div>`
@@ -123,6 +123,7 @@ function getCartItem(product) {
 
 let cart_list = document.querySelector(".cart-list")
 let clear_cart_btn = document.querySelector(".clear-buttons")
+let go_to_order_btn = document.querySelector(".go-to-order-btn")
 
 if (cart_list) {
     cart_list.innerHTML = ''
@@ -137,6 +138,7 @@ if (cart_list) {
 
     if (Object.keys(cart.items).length > 0) {
         clear_cart_btn.classList.remove('d-none')
+        go_to_order_btn.classList.remove('d-none')
     }
 
     let clear_btn = document.querySelector(".clear-btn")
@@ -145,5 +147,6 @@ if (cart_list) {
         document.cookie = `cart=''; max-age=0; path/`
         cart_list.innerHTML = 'Your cart is empty'
         clear_cart_btn.classList.add('d-none')
+        go_to_order_btn.classList.add('d-none')
     })
 }

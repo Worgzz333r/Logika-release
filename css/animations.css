@@ -1,0 +1,67 @@
+@keyframes squish {
+    0% {}
+
+    100% {
+        transform: scaleX(10%);
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: scaleX(20%);
+    }
+
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+@keyframes text-appear {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #FFF4E6;
+    }
+}
+
+@keyframes prod-pan-appear {
+    0% {
+        transform: scaleY(10%);
+    }
+
+    100% {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes order-appear {
+    0% {
+        transform: scale(20%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes main-appear {
+    0% {
+        transform: scaleY(20%);
+    }
+
+    100% {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes order-form-appear {
+    0% {
+        transform: scaleX(5%);
+    }
+
+    100% {
+        transform: scaleX(100%);
+    }
+}

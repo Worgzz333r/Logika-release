@@ -4,7 +4,7 @@
     "title": "Sapphire",
     "image": "../img/sapphire-img.png",
     "price": 3000,
-    "description": "A blue corundum gemstone, known for beauty and durability."
+    "description": "A blue corundum gemstone, known for its beauty and durability."
   },
   {
     "id": 2,
@@ -25,14 +25,14 @@
     "title": "Kyanite",
     "image": "../img/kyanite-img.png",
     "price": 8000,
-    "description": "A carbon gemstone, renowned for its brilliance."
+    "description": "An aluminum silicate mineral, known for its trichroism and hardness."
   },
   {
     "id": 5,
     "title": "Obsidian",
     "image": "../img/obsidian-img.png",
     "price": 2500,
-    "description": "A silica gemstone, known for its play of color."
+    "description": "A volcanic glass, known for its dark color and glassy luster."
   },
   {
     "id": 6,
@@ -46,7 +46,7 @@
     "title": "Quartz",
     "image": "../img/quartz-img.png",
     "price": 900,
-    "description": "A yellow quartz gemstone, known for its cheerful color."
+    "description": "A common mineral, often colorless but can come in various colors, including yellow."
   },
   {
     "id": 8,
@@ -60,7 +60,7 @@
     "title": "Opal",
     "image": "../img/opal-img.png",
     "price": 1800,
-    "description": "A silicate mineral gemstone, known for its deep color and durability."
+    "description": "A hydrated amorphous form of silica, known for its play of color."
   },
   {
     "id": 10,
