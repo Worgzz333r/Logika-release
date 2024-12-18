@@ -65,3 +65,50 @@
         transform: scaleX(100%);
     }
 }
+
+
+@keyframes reverse-appear {
+    0% {
+        transform: scaleY(10%);
+    }
+
+    50% {}
+
+    80% {
+        transform: scaleY(120%);
+    }
+
+    100% {}
+}
+
+@keyframes text-appear-main {
+    0% {
+        color: transparent;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    80% {
+        color: transparent;
+    }
+
+    100% {
+        color: #FFF4E6;
+    }
+}
+
+@keyframes menu-main {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    50% {}
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

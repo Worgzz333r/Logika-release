@@ -1,4 +1,4 @@
-.cart-order-list-format{
+.cart-order-list-format {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,9 +11,6 @@
     overflow-y: scroll;
     scroll-behavior: auto;
     border-radius: 0px 0px 10px 10px;
-
-    animation-duration: .4s;
-    animation-name: order-appear;
 }
 
 .order-page-title {
@@ -52,7 +49,17 @@
     max-width: 40em;
 }
 
-.order-form{
+.order-form {
     animation-name: order-form-appear;
     animation-duration: 1.5s;
+}
+
+.order-anim {
+    animation-duration: .4s;
+    animation-name: order-appear;
+}
+
+.order-title-anim {
+    animation-duration: 2.5s;
+    animation-name: text-appear;
 }
