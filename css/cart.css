@@ -12,6 +12,17 @@
     scroll-behavior: auto;
 }
 
+.cart-list-format::-webkit-scrollbar{
+    background-color: #D9D9D9;
+    box-shadow: inset -5px 0px 10px #00000040;
+}
+
+.cart-list-format::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background-color: #413236;
+    box-shadow: inset 0px 0px 5px ;
+}
+
 .anim-cont {
     animation-duration: .4s;
     animation-name: appear;
@@ -78,16 +89,13 @@
 
 .clear-buttons {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    cursor: pointer;
+    color: #FFF4E6;
 }
 
-.clear-buttons:hover {
+.clear-btn:hover {
     color: #963C3C;
     text-decoration: underline;
-    transition: .05s;
+    transition: .5s;
 }
 
 .clear-buttons:active {
@@ -96,14 +104,14 @@
 }
 
 .clear-btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
     background-color: transparent;
     border: 0;
     color: #FFF4E6;
-}
-
-.clear-btn:hover {
-    color: #963C3C;
-    text-decoration: underline;
+    animation-duration: 1s;
+    animation-name: test;
 }
 
 .go-to-order-btn {
@@ -112,15 +120,15 @@
     border: 0;
     color: #FFF4E6;
     box-shadow: 0px 0px 6px#3C2F2F;
-    animation-duration: .4s;
-    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-name: test;
 }
 
 .go-to-order-btn:hover {
     background-color: #C1DD76;
     color: #3C2F2F;
-    transform: scale(105%);
-    transition: all .3s;
+    transform: scale(110%);
+    transition: all .3s ease-in-out;
 }
 
 .go-to-order-btn:active {

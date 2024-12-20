@@ -70,7 +70,7 @@ class ShoppingCart {
     }
 
     addItem(product) {
-        if (this.items[product.id]) {
+        if (product.id in this.items){
             this.items[product.id].quantity += 1
         } else {
             this.items[product.id] = product
@@ -83,7 +83,11 @@ class ShoppingCart {
 let cart = new ShoppingCart()
 
 function addToCart(event) {
-    let data = event.target.getAttribute('data-product')
+    
+    let data = event.currentTarget.getAttribute('data-product')
+    if (!data){
+        return
+    }
     let product = JSON.parse(data)
     cart.addItem(product)
 
@@ -143,9 +147,9 @@ if (cart_list) {
 
     let clear_btn = document.querySelector(".clear-btn")
 
-    clear_btn.addEventListener("click", function () {
+    clear_btn?.addEventListener("click", function () {
         document.cookie = `cart=''; max-age=0; path/`
-        cart_list.innerHTML = 'Your cart is empty'
+        // cart_list.innerHTML = 'Your cart is empty'
         clear_cart_btn.classList.add('d-none')
         go_to_order_btn.classList.add('d-none')
     })
