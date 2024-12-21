@@ -72,7 +72,7 @@ class ShoppingCart {
     }
 
     addItem(product) {
-        if (product.id in this.items){
+        if (product.id in this.items) {
             this.items[product.id].quantity += 1
         } else {
             this.items[product.id] = product
@@ -85,9 +85,9 @@ class ShoppingCart {
 let cart = new ShoppingCart()
 
 function addToCart(event) {
-    
+
     let data = event.currentTarget.getAttribute('data-product')
-    if (!data){
+    if (!data) {
         return
     }
     let product = JSON.parse(data)
