@@ -148,7 +148,12 @@ header nav ul li {
     grid-template-rows: minmax(5rem, 8rem) 2.2em;
     background-color: #BD977C;
     border-radius: 10px;
-    box-shadow: 0px 3px 10px #413223;
+    box-shadow: inset 0 -35px 10px #413223;
+}
+
+.product-shadow{
+    box-shadow: 0 -2px 10px #413223;
+    border-radius: 10px;
 }
 
 .stone-image {
@@ -218,6 +223,7 @@ header nav ul li {
 
 footer {
     background-color: #3C2F2F;
+    box-shadow: 0 0px 20px black;
 }
 
 .footer-grid {
@@ -263,7 +269,7 @@ footer {
 }
 
 .anim-main {
-    animation-duration: .7s;
+    animation-duration: .8s;
     animation-name: main-appear;
 }
 

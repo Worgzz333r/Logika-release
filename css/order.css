@@ -48,6 +48,13 @@
     border-radius: 10px;
     padding: .4em .4em .4em .8em;
     max-width: 40em;
+
+
+}
+
+label {
+    animation-name: form-label-appear;
+    animation-duration: 1s;
 }
 
 .order-input-bar:focus {

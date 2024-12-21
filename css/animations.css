@@ -109,7 +109,7 @@
     }
 }
 
-@keyframes test {
+@keyframes btn-appear {
     0% {
         background-color: transparent;
         color: transparent;
@@ -132,4 +132,14 @@
     }
 
     100% {}
+}
+
+@keyframes form-label-appear {
+    0% {
+        margin-top: 10em;
+    }
+
+    100% {
+
+    }
 }

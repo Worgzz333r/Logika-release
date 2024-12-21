@@ -111,7 +111,7 @@
     border: 0;
     color: #FFF4E6;
     animation-duration: 1s;
-    animation-name: test;
+    animation-name: btn-appear;
 }
 
 .go-to-order-btn {
@@ -121,7 +121,7 @@
     color: #FFF4E6;
     box-shadow: 0px 0px 6px#3C2F2F;
     animation-duration: 1.5s;
-    animation-name: test;
+    animation-name: btn-appear;
 }
 
 .go-to-order-btn:hover {
